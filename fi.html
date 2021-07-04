@@ -25,6 +25,14 @@
       animation-timing-function: linear;
     }
 
+    .waves2 .cutout {
+      animation-duration: 5s;
+    }
+
+    .waves .bookends {
+      fill: white;
+    }
+
     .mountains {
       fill: rgb(14,122,0);
     }
@@ -68,6 +76,28 @@
 </head>
 <body>
   <svg width="100%" height="100%" viewBox="0 0 3300 2550" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g class="waves waves2" transform="matrix(1,0,0,1,500,1350)">
+      <rect x="80" y="-50" width="1880" height="200"/>
+      <g class="cutout">
+        <ellipse cx="0" cy="0" rx="130" ry="130"/>
+        <ellipse cx="180" cy="0" rx="130" ry="130"/>
+        <ellipse cx="360" cy="0" rx="130" ry="130"/>
+        <ellipse cx="540" cy="0" rx="130" ry="130"/>
+        <ellipse cx="720" cy="0" rx="130" ry="130"/>
+        <ellipse cx="900" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1080" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1260" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1440" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1620" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1800" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1980" cy="0" rx="130" ry="130"/>
+        <ellipse cx="2160" cy="0" rx="130" ry="130"/>
+      </g>
+      <g class="bookends">
+        <ellipse cx="50" cy="12" rx="130" ry="130"/>
+        <ellipse cx="2010" cy="0" rx="130" ry="130"/>
+      </g>
+    </g>
     <g class="waves" transform="matrix(1,0,0,1,500,1250)">
       <rect x="80" y="-50" width="1880" height="200"/>
       <g class="cutout">
@@ -84,6 +114,10 @@
         <ellipse cx="1800" cy="0" rx="130" ry="130"/>
         <ellipse cx="1980" cy="0" rx="130" ry="130"/>
         <ellipse cx="2160" cy="0" rx="130" ry="130"/>
+      </g>
+      <g class="bookends">
+        <ellipse cx="50" cy="12" rx="130" ry="130"/>
+        <ellipse cx="2010" cy="0" rx="130" ry="130"/>
       </g>
     </g>
     <g class="sun">
