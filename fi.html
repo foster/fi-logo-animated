@@ -3,6 +3,9 @@
 <head>
   <style>
     .sun {
+      fill: rgb(228,193,17);
+      stroke: black;
+      stroke-width: 2px;
       transform-origin: 1200px 1200px;
       animation-duration: 20s;
       animation-name: sunrise;
@@ -10,11 +13,24 @@
       animation-timing-function: linear;
     }
 
+    .waves {
+      fill:rgb(17,97,228);
+    }
+
     .waves .cutout {
+      fill: white;
       animation-duration: 6s;
       animation-name: wave;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+    }
+
+    .mountains {
+      fill: rgb(14,122,0);
+    }
+
+    .sailboat {
+      fill: rgb(178,0,0);
     }
 
     @keyframes wave {
@@ -51,37 +67,36 @@
   </style>
 </head>
 <body>
-  <svg width="100%" height="100%" viewBox="0 0 3300 2550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+  <svg width="100%" height="100%" viewBox="0 0 3300 2550" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g class="waves" transform="matrix(1,0,0,1,500,1250)">
-      <rect x="-80" y="-50" width="2252" height="200" style="fill:rgb(17,97,228);"/>
+      <rect x="80" y="-50" width="1880" height="200"/>
       <g class="cutout">
-        <ellipse cx="0" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="180" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="360" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="540" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="720" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="900" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="1080" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="1260" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="1440" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="1620" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="1800" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="1980" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="2160" cy="0" rx="130" ry="130" style="fill:white;"/>
-        <ellipse cx="2340" cy="0" rx="130" ry="130" style="fill:white;"/>
+        <ellipse cx="0" cy="0" rx="130" ry="130"/>
+        <ellipse cx="180" cy="0" rx="130" ry="130"/>
+        <ellipse cx="360" cy="0" rx="130" ry="130"/>
+        <ellipse cx="540" cy="0" rx="130" ry="130"/>
+        <ellipse cx="720" cy="0" rx="130" ry="130"/>
+        <ellipse cx="900" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1080" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1260" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1440" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1620" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1800" cy="0" rx="130" ry="130"/>
+        <ellipse cx="1980" cy="0" rx="130" ry="130"/>
+        <ellipse cx="2160" cy="0" rx="130" ry="130"/>
       </g>
     </g>
     <g class="sun">
-      <ellipse cx="1300" cy="880" rx="65" ry="65" style="fill:rgb(228,193,17);stroke:black;stroke-width:2px;"/>
+      <ellipse cx="1300" cy="880" rx="65" ry="65"/>
     </g>
     <g class="sunset-hider">
       <rect x="800" y="1300" width="200" height="40" style="fill:white;"/>
     </g>
     <g class="mountains">
-      <path d="M 1790,850 L 2400,1300 L 610,1300 L 1790,850 Z" style="fill:rgb(14,122,0);"/>
+      <path d="M 1790,850 L 2400,1300 L 610,1300 L 1790,850 Z"/>
     </g>
     <g class="sailboat">
-      <path d="M 1130,710 L 1130,1300 L 750,1300 L 1130,710 Z" style="fill:rgb(178,0,0);"/>
+      <path d="M 1130,710 L 1130,1300 L 750,1300 L 1130,710 Z"/>
     </g>
   </svg>
 </body>
